@@ -10,7 +10,8 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 bot = telebot.TeleBot(BOT_TOKEN)
-users = [6062670284]
+#put your telegram id here
+users = []
 
 def qna(prompt):
     user = prompt.from_user.id
